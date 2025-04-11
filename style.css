@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background: #f8f8f8;
+    box-shadow: 1px 1px 4px #645d5d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 99999;
+}
+header .logo h1 span{
+    font-family: "Cedarville Cursive", cursive;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #2b2828;
+}
+header nav i{
+    font-size: 20px;
+    display: none;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container .left{
+    background: #eeeaeaa6;
+    height: auto;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+.container .left .text__content h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+.container .left .text__content p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.container .left .text__content .btn{
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.container .left .text__content .btn a{
+    font-size: 30px;
+    background: #3dd800;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f8f8f8;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container .left .text__content .btn a:nth-child(2){
+    background: #1192ce;
+}
+.container .right{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .right .image{
+    position: relative;
+    left: 200px;
+    z-index: 99;
+}
+
+.about{
+    height: 100%;
+    width: 100%;
+}
+.about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.about .left{
+    background: #eeeaeaa6;
+    height: auto;
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.about .left .text__content h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+.about .left .text__content p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.about .left .text__content .btn{
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.about .left .text__content .btn a{
+    font-size: 30px;
+    background: #3dd800;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f8f8f8;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.about .left .text__content .btn a:nth-child(2){
+    background: #1192ce;
+}
+.about .right{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.about .right .image{
+    position: relative;
+    left: 40px;
+    z-index: 99;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .right .image img{
+    height: 60%;
+    object-fit: cover;
+    background-size: cover;
+}
+.services{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.services .container__1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+.services .container__1 .section{
+    height: auto;
+    width: 40%;
+    background: #dfdcdc;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 20px;
+}
+.services .container__1 .section:nth-child(2){
+    top: 100px;
+}
+.services .container__1 .section::before{
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 16px;
+    width: 20%;
+    height: 100px;
+    background: #dfdcdc;
+    transform: rotate(150deg);
+    border-radius: 0px 50px 50px 50px;
+    z-index: -1;
+}
+.services .container__1 .section:nth-child(2)::before{
+    left: 0px;
+    transform: rotate(-20deg);
+}
+.services .container__1 .section::after{
+    content: '';
+    background: #69696960;
+    height: 70vh;
+    width: 2px;
+    position: absolute;
+    right: -30px;
+    top: -120px;
+}
+.services .container__1 .section:nth-child(2)::after{
+    display: none;
+}
+.services .container__1 .section .top__heading h1{
+    font-weight: 300;
+    border-bottom: 1px solid #00000031;
+    width: 100%;
+}
+.services .container__1 .section .bottom__para{
+    padding-top: 10px;
+}
+.contact{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .contact__info{
+    height: auto;
+    width: 70%;
+    background: #eeeaeaa6;
+    padding: 26px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 50px 0px 50px 0px;
+}
+.contact .contact__info .top__contact span{
+    font-size: 25px;
+    font-weight: 400;
+}
+.contact .contact__info .bottom__contact ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.contact .contact__info .bottom__contact ul li span{
+    font-weight: 600;
+}
+.contact .contact__info .bottom__contact p{
+    margin-top: 10px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 800px) {
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        background: #f8f8f8;
+        width: 40%;
+        height: auto;
+        padding: 10px 10px;
+        align-items: flex-start;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px;
+        display: none;
+    }
+    header nav ul.activate{
+        display: flex;
+    }
+    header nav i{
+        font-size: 26px;
+        display: flex;
+        cursor: pointer;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10vh;
+        height: 100vh;
+        width: 100%;
+    }
+    .container .left {
+        width: 90%;
+        position: relative;
+        padding: 20px;
+        order: 1;
+    }
+    .container .left .text__content h1{
+        font-size: 30px;
+    }
+    .container .right .image {
+        /* position: relative; */
+        left: -20px;
+        max-width: 100%;
+    }
+    .container .right .image img{
+        height: 300px;
+    }
+    
+    /* Adjust About section for smaller screens */
+    .about {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: relative;
+        margin-top: 100px;
+        padding: 10px 0;
+    }
+    .about .left,
+    .about .right {
+        width: 100%;
+        position: relative;
+        border-radius: 0;
+    }
+    .about .left {
+        padding: 10px;
+    }
+    .about .left .text__content p{
+        font-size: 16px;
+    }
+    .about .right .image {
+        left: -10px;
+        width: 100%;
+    }
+    .about .right .image img{
+        height: 230px;
+    }
+    
+    /* Stack the Services sections vertically */
+    .services .container__1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .services .container__1 .section {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+    /* Hide any pseudo-elements if they disrupt layout */
+    .services .container__1 .section::before,
+    .services .container__1 .section::after {
+        display: none;
+    }
+    
+    /* Adjust Contact section padding and width */
+    .contact .contact__info {
+        width: 90%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+}
